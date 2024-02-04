@@ -1,8 +1,8 @@
 export type Language = {
-	iso639_1: string;
-	iso639_2: string;
-	name: string;
-	nativeName: string;
+	iso639_1?: string;
+	iso639_2?: string;
+	name?: string;
+	nativeName?: string;
 };
 
 export type Currency = {
@@ -19,8 +19,8 @@ export type Flag = {
 export type RegionalBloc = {
 	acronym: string;
 	name: string;
-	otherAcronyms: string[];
-	otherNames: string[];
+	otherAcronyms?: string[];
+	otherNames?: string[];
 };
 
 export type Translations = {
@@ -28,7 +28,7 @@ export type Translations = {
 	pt: string;
 	nl: string;
 	hr: string;
-	fa: string;
+	fa?: string;
 	de: string;
 	es: string;
 	fr: string;
@@ -43,25 +43,25 @@ export type Country = {
 	alpha2Code: string;
 	alpha3Code: string;
 	callingCodes: string[];
-	capital: string;
-	altSpellings: string[];
+	capital?: string;
+	altSpellings?: string[];
 	subregion: string;
 	region: string;
 	population: number;
-	latlng: number[];
+	latlng?: number[];
 	demonym: string;
-	area: number;
-	gini: number;
+	area?: number;
+	gini?: number;
 	timezones: string[];
-	borders: string[];
+	borders?: string[];
 	nativeName: string;
 	numericCode: string;
 	flags: Flag;
-	currencies: Currency[];
-	languages: Language[];
+	currencies?: Currency[];
+	languages?: Language[];
 	translations: Translations;
 	flag: string;
-	regionalBlocs: RegionalBloc[];
-	cioc: string;
+	regionalBlocs?: RegionalBloc[];
+	cioc?: string;
 	independent: boolean;
 };

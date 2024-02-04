@@ -46,7 +46,7 @@ const CountryDetails = () => {
 					</ul>
 					<ul className="flex flex-col gap-2">
 						<li><span className="font-bold">Top Level Domain</span>: {country.topLevelDomain}</li>
-						<li><span className="font-bold">Currencies</span>: {formatCurrencies(country.currencies)}</li>
+						<li><span className="font-bold">Currencies</span>: {formatCurrencies(country.currencies!)}</li>
 						<li><span className="font-bold">Languages</span>: {formatLanguages(country.languages)}</li>
 					</ul>
 
